@@ -46,7 +46,7 @@ for my $r (@$res_fk) {
 
 print "\nParent Tables\n";
 
-my $res_fk = $dbh->selectall_arrayref("exec sp_fkeys \@fktable_name='$table_name'");
+$res_fk = $dbh->selectall_arrayref("exec sp_fkeys \@fktable_name='$table_name'");
 
 for my $r (@$res_fk) {
   printf("  %-40s | %-20s | %2d | %-60s | %-50s\n", 
