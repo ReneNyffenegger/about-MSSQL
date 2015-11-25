@@ -1,2 +1,1 @@
-# about-MSSQL
-About SQL Server
+# About SQL Server (MSSQL)
