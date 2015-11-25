@@ -1,7 +1,7 @@
 #
 #   parent_and_child_tables.pl TABLENAME USERNAME PASSWORD DATABASE
 #
-#   Show Primary Key, dependent child tables and referenced parent
+#   Show primary key, dependent child tables and referenced parent
 #   tables for TABLENAME.
 #
 use warnings;
