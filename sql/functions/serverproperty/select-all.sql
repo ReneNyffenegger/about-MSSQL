@@ -1,7 +1,7 @@
 select
   serverproperty('BuildClrVersion'                        ) BuildClrVersion,
   serverproperty('Collation'                              ) Collation,
-  serverproperty('CollationID'                            ) ComparisonStyle,
+  serverproperty('CollationID'                            ) CollationID,
   serverproperty('ComparisonStyle'                        ) ComparisonStyle,
   serverproperty('ComputerNamePhysicalNetBIOS'            ) ComputerNamePhysicalNetBIOS,
   serverproperty('Edition'                                ) Edition,
