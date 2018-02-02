@@ -1,0 +1,1 @@
+:exit (select 42)
