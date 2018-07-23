@@ -1,0 +1,8 @@
+--
+--  Print the name of the currently used database
+--
+set nocount on
+print ''
+select '  DB Name: ' + substring(db_name(), 1, 20) as db_name
+print ''
+.
