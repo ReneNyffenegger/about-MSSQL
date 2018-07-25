@@ -12,7 +12,9 @@ go
 
 create  procedure tq84_too_many_rows(@num integer) as
   declare
-     @txt    varchar(10);
+     @txt                varchar(10)     ,
+     @rowcount           integer         ,
+     @warn_too_many_rows varchar(50) = '';
   select
      @txt = txt
   from
@@ -22,7 +24,11 @@ create  procedure tq84_too_many_rows(@num integer) as
   order by
      txt;
 
-  print 'txt = ' + @txt;
+  set @rowcount = @@rowcount;
+  if  @rowcount > 1
+     set @warn_too_many_rows = ' (Warning, rowcount is ' + str(@rowcount) + ')';
+
+  print 'txt = ' + @txt + @warn_too_many_rows;
 go
 
 exec tq84_too_many_rows 1;
