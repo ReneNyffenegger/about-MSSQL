@@ -36,7 +36,7 @@ exec tq84_too_many_rows 1;
 --   Note: SQL Server, contrary to Oracle which raises TOO_MANY_ROWS,
 --         does not raise an error in this case.
 --         It just prints the values of the last record found.
---         This is just a desaster waiting to happen.
+--         This is just a disaster waiting to happen.
 --
 exec tq84_too_many_rows 2;
 go
