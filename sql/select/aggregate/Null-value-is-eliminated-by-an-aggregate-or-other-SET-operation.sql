@@ -1,5 +1,3 @@
- -- Null value is eliminated by an aggregate or other SET operation
-
 set nocount       on;
 set ansi_warnings on;
 
