@@ -1,0 +1,10 @@
+insert into tq84_top_n values( 1, 'jkl mno pqr');
+insert into tq84_top_n values( 2, 'def ghi'    );
+insert into tq84_top_n values( 3, 'abc def'    );
+insert into tq84_top_n values( 4, 'jkl'        );
+insert into tq84_top_n values( 5, 'abc'        );
+insert into tq84_top_n values( 6, 'def ghi'    );
+insert into tq84_top_n values( 7, 'xyz'        );
+insert into tq84_top_n values( 8, 'pqrs tuv'   );
+insert into tq84_top_n values( 9, 'gh ijklm'   );
+insert into tq84_top_n values(10, 'def ghi'    );
