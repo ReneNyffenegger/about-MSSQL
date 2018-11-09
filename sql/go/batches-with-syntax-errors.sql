@@ -8,6 +8,7 @@ insert into tq84_batch (txt) values ('Inserted in first batch.');
 
 go
 
+-- -------------------------------------------------------------------
 --
 -- Second batch: insert a few more records into the table.
 --
