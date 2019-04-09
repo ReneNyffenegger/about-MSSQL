@@ -8,5 +8,5 @@ create table dbo.csv_simple (
 
 
 bulk insert dbo.csv_simple
-from 'C:\Users\OMIS.Rene\github\about\MSSQL\t-sql\statements\bulk-insert\01-basic\data.csv'
+from 'C:\Users\Rene\github\about\MSSQL\t-sql\statements\bulk-insert\01-basic\data.csv'
 with (format = 'CSV');
