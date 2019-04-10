@@ -6,8 +6,8 @@ select
 from (
    select
       item,
-	  grp,
-	  val_one
+      grp,
+      val_one
    from
       things
 ) as t
