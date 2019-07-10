@@ -44,7 +44,7 @@ begin
        return 'IgnoreCase option failed!';
     end;
 
-    exec @res=sp_OAMethod @objRegexExp, 'Replace', @result OUT, @searchstring, @replacestring;
+    exec @res=sp_OAMethod @objRegexExp, 'Replace', @result out, @searchstring, @replacestring;
 
     if @res <> 0 begin
        return 'Bad search string!';
