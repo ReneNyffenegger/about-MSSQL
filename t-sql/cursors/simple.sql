@@ -8,7 +8,14 @@ insert into tq84_tab values (3, 'three');
 go
 
 declare
-   cur_tq84_tab cursor for select * from tq84_tab where col_2 like 't%' order by col_2
+   cur_tq84_tab cursor for
+       select *
+       from
+          tq84_tab
+       where
+          col_2 like 't%'
+       order by
+          col_2;
 declare
    @val_1       integer,
    @val_2       varchar(10);
