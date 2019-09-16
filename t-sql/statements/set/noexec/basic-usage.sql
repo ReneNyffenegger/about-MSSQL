@@ -10,7 +10,3 @@ print ('Third batch, first print statement');
 set noexec off
 print ('Third batch, second print statement');
 go
-
--- First batch
--- Second batch, first print statement
--- Third batch, second print statement
