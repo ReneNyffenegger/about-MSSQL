@@ -37,7 +37,7 @@ select
   serverproperty('ProductVersion'                         ) ProductVersion,
   serverproperty('ResourceLastUpdateDateTime'             ) ResourceLastUpdateDateTime,
   serverproperty('ResourceVersion'                        ) ResourceVersion,
-  serverproperty('ServerName'                             ) ServerName,
+  serverproperty('ServerName'                             ) ServerName,                   -- @@serverName
   serverproperty('SqlCharSet'                             ) SqlCharSet,
   serverproperty('SqlCharSetName'                         ) SqlCharSetName,
   serverproperty('SqlSortOrder'                           ) SqlSortOrder,
