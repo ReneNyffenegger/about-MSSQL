@@ -1,4 +1,5 @@
 select
+   prc.spid                     ,
    prc.login_time               ,
    prc.last_batch               ,
    db_name(prc.dbid)    db_name ,
