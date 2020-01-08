@@ -12,13 +12,13 @@ select
       else          '?'
    end                                                                   frequency,
    sch.freq_interval,
-   sch.freq_subday_interval                                              period_between_execution,
+   sch.freq_subday_interval                                              interval_between_execution,
    case sch.freq_subday_type
       when   1 then 'at specified time'
       when   2 then 'seconds'
       when   4 then 'minutes'
       when   8 then 'hours'
-   end                                                                   frequency_sub_type,
+   end                                                                   interval_unit,
    case sch.freq_relative_interval
       when   0 then 'n/a'
       when   1 then 'first'
