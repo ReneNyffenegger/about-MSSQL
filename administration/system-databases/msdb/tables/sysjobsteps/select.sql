@@ -22,6 +22,7 @@ select
         else        '?'
    end                                                               last_run_outcome,
    ------------------------------------------------------------------
+   stp.cmdexec_success_code,
    stp.last_run_duration,
    stp.subsystem,
    stp.command,
