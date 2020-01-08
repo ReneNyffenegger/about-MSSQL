@@ -2,7 +2,7 @@ select
    sch.schedule_id,
    sch.name                     schedule_name,
    case sch.freq_type
-        when   1 then 'once'
+      when   1 then 'once'
       when   4 then 'daily'
       when   8 then 'weekly'
       when  16 then 'monthly'
@@ -14,13 +14,13 @@ select
    sch.freq_interval,
    sch.freq_subday_interval                                              period_between_execution,
    case sch.freq_subday_type
-        when   1 then 'at specified time'
+      when   1 then 'at specified time'
       when   2 then 'seconds'
       when   4 then 'minutes'
       when   8 then 'hours'
    end                                                                   frequency_sub_type,
    case sch.freq_relative_interval
-        when   0 then 'n/a'
+      when   0 then 'n/a'
       when   1 then 'first'
       when   2 then 'second'
       when   4 then 'fourth'
