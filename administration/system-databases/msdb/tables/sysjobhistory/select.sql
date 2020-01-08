@@ -1,5 +1,4 @@
 select
-   type_id(hst.run_date),
    msdb.dbo.agent_datetime(hst.run_date, hst.run_time) run_time,
    job.name                                            job_name,
    stp.step_name,
