@@ -1,5 +1,5 @@
 select
-   db.name                       db_namee,
+   db.name                       db_name,
    trx_lock.request_session_id,
    wait.blocking_session_id,
    object_name(parts.object_id) blocked_object,
