@@ -27,6 +27,7 @@ select
    stp.subsystem,
    stp.command,
    stp.database_name,
+   stp.database_user_name,
    stp.output_file_name,
    stp.step_uid
 from
