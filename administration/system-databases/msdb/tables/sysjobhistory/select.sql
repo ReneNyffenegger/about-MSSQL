@@ -7,7 +7,7 @@ select
 -- Convert to seconds:
 --
    hst.run_duration / 10000      * 3600 + 
-  (hst.run_duration / 100 % 100)   * 60 +
+  (hst.run_duration / 100 % 100) *   60 +
    hst.run_duration       % 100                        run_duration_seconds,
    stp.step_id,
 -- hst.run_status,
@@ -32,7 +32,8 @@ select
    stp.on_success_step_id,
    stp.on_fail_action,
    stp.on_fail_step_id,
-   stp.server,
+-- stp.server,
+   hst.server,
    stp.database_name,
    stp.database_user_name,
    stp.retry_attempts,
@@ -45,7 +46,6 @@ select
    stp.step_uid,                 -- identifies job step
    hst.sql_message_id,
    hst.sql_severity,
-   hst.server,
    job.start_step_id             job_start_step_id,
 -- hst.step_id                   hist_step_id,
    job.category_id,
