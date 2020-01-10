@@ -18,6 +18,10 @@ from
    sys.sysprocesses     prc                 cross apply
    sys.dm_exec_sql_text(prc.sql_handle) sql
 where
+--
+-- Exclude own session:
+   prc.spid <> @@spid                                  and
+-- -------------------------------------------------------
    prc.cmd   not in (
       'AWAITING COMMAND',
       'MIRROR HANDLER'  ,
