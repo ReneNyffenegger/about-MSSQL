@@ -1,2 +1,1 @@
-set curdir=%cd%
-sqlcmd -S . -d tq84_db -i bulk-insert.sql
+sqlcmd -S . -d tq84_db -v curdir="%CD%" -i bulk-insert.sql
