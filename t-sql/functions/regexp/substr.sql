@@ -1,7 +1,7 @@
 drop   function if exists dbo.regexp_substr;
 go
 
-create function dbo.regexp_substr (
+create function dbo.regexp_substr ( -- {
     @searchstring  varchar(4000),
     @pattern       varchar(4000),
     @occurence     integer
@@ -10,7 +10,7 @@ returns varchar(4000)
 as
 begin
 
-    declare @objRegexExp int, 
+    declare @objRegexExp int,
         @objErrorObj     int,
         @strErrorMessage varchar(255),
         @res             int,
@@ -30,8 +30,9 @@ begin
     exec @res=sp_oaSetProperty @objRegexExp, 'global'    , 1;
     exec @res=sp_oaMethod      @objRegexExp, 'execute'   , @mtcColl out, @searchstring;
     exec @res=sp_oaGetProperty @mtcColl, @item, @result out;
+    exec @res=sp_oaDestroy     @mtcColl;
     exec @res=sp_oaDestroy     @objRegexExp;
 
     return @result
-end;
+end; -- }
 go
