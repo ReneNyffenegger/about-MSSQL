@@ -16,4 +16,4 @@ from
    sys.schemas     sch on alo.schema_id = sch.schema_id
 where
    is_ms_shipped <>  1                      and
-   alo.type_des   = 'SQL_STORED_PROCEDURE';
+   alo.type_desc  = 'SQL_STORED_PROCEDURE';
