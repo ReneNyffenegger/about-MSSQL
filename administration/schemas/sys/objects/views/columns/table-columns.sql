@@ -1,6 +1,6 @@
 select
--- sch.name             sch_name,
--- tab.name             tab_name,
+   sch.name             sch_name,
+   tab.name             tab_name,
    col.name             col_name,
 -- col.user_type_id,
    ust.name             user_type,
