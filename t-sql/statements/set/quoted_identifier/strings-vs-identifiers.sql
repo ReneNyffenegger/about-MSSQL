@@ -42,7 +42,7 @@ set quoted_identifier off
 -------------------------
 
 --
---  If quoted_identifer is set to off, text that is enclosed in quotation
+--  If quoted_identifier is set to off, text that is enclosed in quotation
 --  marks is interpreted as strings.
 --  Therefore, in the following statement, "quoted identifier test" is
 --  taken to be a string and would cause the error message:
